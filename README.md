@@ -24,11 +24,6 @@ Required by g2o (see below). Download and install instructions can be found at: 
 **Required onnxruntime-linux-x64-gpu-1.16.3** and Modify line 63 of the CmakeLists.txt to the current location of ONNXRuntime library.
 
 
-## ROS (optional)
-
-We provide some examples to process input of a monocular, monocular-inertial, stereo, stereo-inertial or RGB-D camera using ROS. Building these examples is optional. These have been tested with ROS Melodic under Ubuntu 18.04.
-
-
 
 
 ## Download Dbow File
