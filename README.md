@@ -61,7 +61,7 @@ The real-time orthomosaicking example is provided by `Examples/Monocular/mono_ma
 
 ### NPU Dataset Preparation
 
-For the NPU dataset, the GNSS timestamps are not directly synchronized with the image timestamps, and the dataset does not provide public synchronization parameters. Before running the GNSS-assisted orthomosaicking pipeline, we first run ORB-SLAM3 in pure visual mode to estimate a visual trajectory and save `KeyFrameTrajectory.txt`.
+For the NPU-DroneMap dataset, the GNSS timestamps are not directly synchronized with the image timestamps, and the dataset does not provide public synchronization parameters. Before running the GNSS-assisted orthomosaicking pipeline, we first run ORB-SLAM3 in pure visual mode to estimate a visual trajectory and save `KeyFrameTrajectory.txt`.
 
 Then, we align the GNSS measurements to the image frames using:
 
