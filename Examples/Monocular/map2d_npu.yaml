@@ -1,0 +1,102 @@
+%YAML:1.0
+
+#--------------------------------------------------------------------------------------------
+# Camera Parameters. Adjust them!
+#--------------------------------------------------------------------------------------------
+File.version: "1.0"
+
+Camera.type: "PinHole"
+
+# Camera calibration and distortion parameters (OpenCV) 
+# Camera1.fx: 1184.51770
+# Camera1.fy: 1183.63810
+# Camera1.cx: 978.30778
+# Camera1.cy: 533.85598
+
+# Camera1.k1: -0.01581
+# Camera1.k2: 0.01052
+# Camera1.p1: -0.00075
+# Camera1.p2: 0.00245
+# Camera1.k3: 0.00000
+
+
+Camera1.fx: 1220.00000
+Camera1.fy: 1220.00000
+Camera1.cx: 960.00000
+Camera1.cy: 540.00000
+
+Camera1.k1: 0.0
+Camera1.k2: 0.0
+Camera1.p1: 0.0
+Camera1.p2: 0.0
+Camera1.k3: 0.0
+
+# Camera frames per second 
+Camera.fps: 100
+
+# Color order of the images (0: BGR, 1: RGB. It is ignored if images are grayscale)
+Camera.RGB: 1
+
+# Camera resolution
+Camera.width: 1920
+Camera.height: 1080
+
+# Camera.newWidth: 450
+# Camera.newHeight: 300
+
+Camera.newWidth: 960
+Camera.newHeight: 540
+# Camera.newWidth: 750
+# Camera.newHeight: 405
+#--------------------------------------------------------------------------------------------
+# ORB Parameters
+#--------------------------------------------------------------------------------------------
+
+# ORB Extractor: Number of features per image
+ORBextractor.nFeatures: 1500
+
+# ORB Extractor: Scale factor between levels in the scale pyramid 	
+ORBextractor.scaleFactor: 1.2
+
+# ORB Extractor: Number of levels in the scale pyramid	
+ORBextractor.nLevels: 1
+
+# ORB Extractor: Fast threshold
+# Image is divided in a grid. At each cell FAST are extracted imposing a minimum response.
+# Firstly we impose iniThFAST. If no corners are detected we impose a lower value minThFAST
+# You can lower these values if your images have low contrast			
+ORBextractor.iniThFAST: 20
+ORBextractor.minThFAST: 7
+System.UseGlobalMeas: 1
+System.GPSSimulatedNoise: 0.5
+
+
+System.GpsSigmaXY: 2.0
+System.GpsSigmaZ: 5.0
+System.GlobalAlignInitFrames: 1200
+System.GlobalAlignFinishMeasurements: 150
+
+
+
+
+System.t_b_g: !!opencv-matrix
+   rows: 3
+   cols: 1
+   dt: f
+   data: [0.0, 
+          0.0, 
+          0.0 ]
+          
+#--------------------------------------------------------------------------------------------
+# Viewer Parameters
+#--------------------------------------------------------------------------------------------
+Viewer.KeyFrameSize: 0.05
+Viewer.KeyFrameLineWidth: 1.0
+Viewer.GraphLineWidth: 0.9
+Viewer.PointSize: 2.0
+Viewer.CameraSize: 0.08
+Viewer.CameraLineWidth: 3.0
+Viewer.ViewpointX: 0.0
+Viewer.ViewpointY: -0.7
+Viewer.ViewpointZ: -1.8
+Viewer.ViewpointF: 500.0

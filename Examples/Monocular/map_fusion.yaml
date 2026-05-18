@@ -1,0 +1,36 @@
+%YAML:1.0
+
+File.version: "1.0"
+
+#Plane: [-0.18927, -0.81146, 0.95135, -0.0048715, 0.010414, 0, 0.99993]
+Plane: [-0.173511, -0.819088, 0.947996, -0.00786789, -0.00260344, 0,    0.999966]
+#Plane: [109.842881, 229.157339, 347.099277, -0.006105, 0.002933, -0.000018, 0.999977]
+
+#Act: "TestMap2D"
+Act: "Map2DWithSLAM"
+
+GPS.Origin: [108.757450, 34.029762, 0.000000]
+
+Camera.CameraType: "PinHole"
+
+Camera.Paraments: [1920,1080,1220.000000,1220.000000,960.000000,540.000000]  #phantom3
+
+#Camera.Paraments: [1280,1024,959.5098,915.3937,640.78562,528.34661] #fastlio zicai dataset
+
+
+#600, 400,   590.749, 471.993, 298.204, 201.527] #openrealm resize
+
+
+#Camera.Paraments: [1228, 1026,   1209.07, 1210.66, 610.324, 516.917] #openrealm
+
+#Camera.Paraments: [750, 405,  476.562, 457.5, 375, 202.5]
+#Camera.Paraments: [600, 400,  370.162, 438.384, 305.721, 197.724]
+
+#Camera.Paraments: [5472,3648,4710.67,4710.67,2776.12,1778.53]
+TrajectosuoyouuryFile: "/media/xiao/data1/datasets_machine/phantom3-npu/trajectory.txt"
+
+PrepareFrameNum: 5
+
+Map2D.Type: 3
+
+AutoFeedFrames: 1
